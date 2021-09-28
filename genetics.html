@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google" value="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet" media="(min-width: 768px)">
+    <link href="css/desktop-min.css" rel="stylesheet" media="(min-width: 1024px)">
+    <link href="css/desktop.css" rel="stylesheet" media="(min-width: 1280px)">
+    <link href="css/desktop-big.css" rel="stylesheet" media="(min-width:1440px)">
+    <link href="css/desktop-fullhd.css" rel="stylesheet" media="(min-width:1920px)">
+    <link href="fonts/Rubik-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Rubik-Bold.woff" rel="preload" as="font" crossorigin>
+    <link href="fonts/Rubik-Regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Rubik-Regular.woff" rel="preload" as="font" crossorigin>
+    <link href="fonts/Rubik-Medium.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Rubik-Medium.woff" rel="preload" as="font" crossorigin>
+    <title>Генетика</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU" type="text/javascript"></script><!--[if lte IE 9]>
+    <script src="js/html5shiv/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="js-scroll">
+    <div class="b-page-wrapper">
+      <header class="b-header js-header init init-burger">
+        <div class="b-header__top">
+          <div class="b-container">
+              <ul class="b-menu b-menu--top">
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="КЛИНИКА">КЛИНИКА</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="ЦЕНЫ">ЦЕНЫ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/reviews-page.html" title="ОТЗЫВЫ">ОТЗЫВЫ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="АКЦИИ">АКЦИИ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="КОРПОРАТИВНЫМ КЛИЕНТАМ">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/news.html" title="НОВОСТИ">НОВОСТИ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/useful-information.html" title="ПОЛЕЗНАЯ ИНФОРМАЦИЯ">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a>
+                </li>
+                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="КОНТАКТЫ">КОНТАКТЫ</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="b-header__info">
+          <div class="b-header__sticky">
+            <div class="b-container">
+              <div class="b-header__inner">
+                <div class="b-burger b-burger--sticky js-burger-sticky"><a class="b-burger__link" href="javascript:void(0);"><span class="b-burger__line"></span></a>
+                </div>
+                <div class="b-burger"><a class="b-burger__link js-open-burger" href="javascript:void(0);"><span class="b-burger__line"></span></a>
+                  <div class="b-burger__menu js-burger">
+                    <div class="b-burger__inner">
+                      <div class="b-burger__scroll-part">
+                        <ul class="b-menu b-menu--burger">
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ПОЛИКЛИНИКА">ПОЛИКЛИНИКА<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ПОЛИКЛИНИКА"><i class="b-icon b-icon--back icon-arrow-down"></i>ПОЛИКЛИНИКА</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ПЕДИАТРИЯ">ПЕДИАТРИЯ<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ПЕДИАТРИЯ"><i class="b-icon b-icon--back icon-arrow-down"></i>ПЕДИАТРИЯ</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ДИАГНОСТИКА">ДИАГНОСТИКА<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ДИАГНОСТИКА"><i class="b-icon b-icon--back icon-arrow-down"></i>ДИАГНОСТИКА</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ВЕДЕНИЕ БЕРЕМЕННОСТИ">ВЕДЕНИЕ БЕРЕМЕННОСТИ<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ВЕДЕНИЕ БЕРЕМЕННОСТИ"><i class="b-icon b-icon--back icon-arrow-down"></i>ВЕДЕНИЕ БЕРЕМЕННОСТИ</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="РОДДОМ">РОДДОМ<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="РОДДОМ"><i class="b-icon b-icon--back icon-arrow-down"></i>РОДДОМ</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="СТАЦИОНАР">СТАЦИОНАР<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="СТАЦИОНАР"><i class="b-icon b-icon--back icon-arrow-down"></i>СТАЦИОНАР</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ПЛАСТИЧЕСКАЯ ХИРУРГИЯ">ПЛАСТИЧЕСКАЯ ХИРУРГИЯ<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ПЛАСТИЧЕСКАЯ ХИРУРГИЯ"><i class="b-icon b-icon--back icon-arrow-down"></i>ПЛАСТИЧЕСКАЯ ХИРУРГИЯ</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="ЭКО">ЭКО<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="ЭКО"><i class="b-icon b-icon--back icon-arrow-down"></i>ЭКО</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-menu__link--inner js-open-inner" href="javascript:void(0);" title="КОСМЕТОЛОГИЯ">КОСМЕТОЛОГИЯ<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                            <div class="b-menu__inner js-scroll"><a class="b-menu__link b-menu__link--main js-close-inner" href="javascript:void(0);" title="КОСМЕТОЛОГИЯ"><i class="b-icon b-icon--back icon-arrow-down"></i>КОСМЕТОЛОГИЯ</a>
+                              <ul class="b-menu b-menu--inner">
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="О клинике">О клинике</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Контакты">Контакты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Виртуальный тур">Виртуальный тур</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Правила клиники">Правила клиники</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Лицензии">Лицензии</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Органы надзора">Органы надзора</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Отчеты">Отчеты</a>
+                                </li>
+                                <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="КЛИНИКА">КЛИНИКА</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="ЦЕНЫ">ЦЕНЫ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="ОТЗЫВЫ">ОТЗЫВЫ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="АКЦИИ">АКЦИИ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="КОРПОРАТИВНЫМ КЛИЕНТАМ">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="НОВОСТИ">НОВОСТИ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="ПОЛЕЗНАЯ ИНФОРМАЦИЯ">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a>
+                          </li>
+                          <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="КОНТАКТЫ">КОНТАКТЫ</a>
+                          </li>
+                        </ul>
+                        <div class="b-info">
+                          <div class="b-info__phone"><span class="b-info__fulltime">Скорая помощь</span><a class="b-link b-link--phone b-link--burger" href="tel:78126007777" title="+ 7 (812) 600-77-77">+ 7 (812) 600-77-77</a>
+                          </div>
+                          <div class="b-info__phone"><span class="b-info__fulltime">E-mail</span><a class="b-link b-link--phone b-link--burger" href="mailto:info@avapeter.ru" title="info@avapeter.ru">info@avapeter.ru</a>
+                          </div>
+                        </div>
+                        <div class="b-social b-social--footer">
+                          <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-vk"></i></a>
+                          </div>
+                          <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-yt"></i></a>
+                          </div>
+                          <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-fb"></i></a>
+                          </div>
+                          <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="b-logo b-logo--header" href="/" title="">
+                <picture class="b-logo__picture"><source class="b-logo__image" srcset="images/inhtml/logo.svg" media="(min-width: 1024px)"/><source class="b-logo__image" srcset="images/inhtml/logo-tablet.svg" media="(min-width: 768px)"/><img class="b-logo__image" src="images/inhtml/logo-mob.svg" alt="" role="presentation"/>
+                </picture></a>
+                <div class="b-header__phone"><a class="b-link b-link--phone" href="tel:88432001065" title="8 (843) 200-10-65">8 (843) 200-10-65</a><span class="b-header__fulltime">Круглосуточно</span>
+                </div><a class="b-button b-button--green b-button--header hidden-mobile js-open-popup" href="javascript:void(0);" title="обратный звонок" data-popup="callback">обратный звонок</a><a class="b-button b-button--orange b-button--header hidden-mobile js-open-popup" href="javascript:void(0);" title="Записаться" data-popup="appointment">Записаться</a><a class="b-button b-button--green-light b-button--header only-mobile js-open-popup" href="javascript:void(0);" title="Запись" data-popup="appointment">Запись</a>
+                <div class="b-search-wrapper b-search-wrapper--double"><a class="b-search-wrapper__link js-show-search" href="javascript:void(0);" title="Поиск по сайту..."><span class="b-search-wrapper__icon-wrapper"><i class="b-icon b-icon--search b-icon--open-search icon-search"></i><i class="b-icon b-icon--close b-icon--open-search icon-close"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-header__secondary">
+          <div class="b-container">
+            <div class="b-header__inner b-header__inner--secondary">
+              <div class="b-header__menu b-header__menu--secondary">
+                <ul class="b-menu b-menu--secondary js-menu-secondary js-scroll-block">
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Поликлиника">Поликлиника<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Педиатрия">Педиатрия<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Диагностика">Диагностика<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Ведение беременности">Ведение беременности<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Роддом">Роддом<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Стационар">Стационар<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Пластическая хирургия">Пластическая хирургия<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Эко">Эко<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item"><a class="b-menu__link b-menu__link--innertop" href="javascript:void(0);" title="Косметология">Косметология<i class="b-icon b-icon--more icon-arrow-down"></i></a>
+                    <div class="b-menu__innertop">
+                      <ul class="b-menu b-menu--innertop">
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic.html" title="О клинике">О клинике</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/contacts.html" title="Контакты">Контакты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/virtual-tour.html" title="Виртуальный тур">Виртуальный тур</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/clinic-rules.html" title="Правила клиники">Правила клиники</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/license.html" title="Лицензии">Лицензии</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/supervision-page.html" title="Органы надзора">Органы надзора</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Нормативно-правовые документы">Нормативно-правовые документы</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="/report.html" title="Отчеты">Отчеты</a>
+                        </li>
+                        <li class="b-menu__item"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="Для клиентов">Для клиентов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="/clinic.html" title="КЛИНИКА">КЛИНИКА</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="ЦЕНЫ">ЦЕНЫ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="/reviews-page.html" title="ОТЗЫВЫ">ОТЗЫВЫ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="АКЦИИ">АКЦИИ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="javascript:void(0);" title="КОРПОРАТИВНЫМ КЛИЕНТАМ">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="/news.html" title="НОВОСТИ">НОВОСТИ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="/useful-information.html" title="ПОЛЕЗНАЯ ИНФОРМАЦИЯ">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a>
+                  </li>
+                  <li class="b-menu__item b-menu__item--menuhover"><a class="b-menu__link b-undefined" href="/contacts.html" title="КОНТАКТЫ">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="b-search-wrapper b-search-wrapper--main"><a class="b-search-wrapper__link js-show-search" href="javascript:void(0);" title="Поиск по сайту..."><span class="b-search-wrapper__text">Поиск по сайту...</span><span class="b-search-wrapper__icon-wrapper"><i class="b-icon b-icon--search b-icon--open-search icon-search"></i><i class="b-icon b-icon--close b-icon--open-search icon-close"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-search b-search--search b-search--header js-search-wrapper">
+          <div class="b-container">
+            <form class="b-search__form js-form-validate js-form-validate--search js-form-validate--header js-search-wrapper" method="post" name="form-search" action="">
+              <div class="b-input b-input--search b-input--header js-search-wrapper"><input class="b-input__input-field b-input__input-field--search js-search js-input js-input--search js-input--header js-search-wrapper" id="search" type="text" placeholder="Введите ваш запрос" name="search" value="" required="required"/><span class="b-input__error">Текст ошибки</span>
+                <label class="b-input__label" for="search">Поиск:<span class="b-input__required">*</span>
+                </label>
+              </div>
+              <button class="b-button b-button--search b-button--header js-do-search">Найти
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="b-header__shadow js-show-search">
+        </div>
+      </header>
+      <main class="b-main" role="main">
+        <div class="b-genetics-main b-anim js-on-visible animated">
+          <div class="b-container">
+            <nav class="b-breadcrumbs b-anim js-on-visible animated">
+              <ul class="b-breadcrumbs__list">
+                <li class="b-breadcrumbs__item"><a class="b-breadcrumbs__link" href="/" title="Главная">Главная</a>
+                </li>
+                <li class="b-breadcrumbs__item"><a class="b-breadcrumbs__link" href="genetics.html" title="Направления">Направления</a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="b-title b-title--h1 b-title--genetics">Генетика
+            </h1>
+            <p class="b-genetics-main__text">Репродуктивная медицина очень тесно связана с&nbsp;медицинской генетикой. Именно генетические исследования во&nbsp;многих случаях позволяют выяснить причину нарушений репродуктивной функции, проанализировать и&nbsp;свести к&nbsp;минимуму риски врождённых заболеваний для будущего ребёнка, а&nbsp;также проконтролировать его состояние в&nbsp;ходе беременности
+            </p><a class="b-button b-button--orange b-button--genetics-main" href="javascript:void(0);" title="Записаться">Записаться</a>
+          </div>
+        </div>
+        <div class="b-genetics-links b-anim js-on-visible animated">
+          <div class="b-container">
+            <ul class="b-genetics-links__list">
+              <li class="b-genetics-links__item"><a class="b-genetics-links__link" href="#directions">Направления</a>
+              </li>
+              <li class="b-genetics-links__item"><a class="b-genetics-links__link" href="#direction">О&nbsp;направлении</a>
+              </li>
+              <li class="b-genetics-links__item"><a class="b-genetics-links__link" href="#service-cost">Стоимость услуг</a>
+              </li>
+              <li class="b-genetics-links__item"><a class="b-genetics-links__link" href="#doctors">врачи</a>
+              </li>
+              <li class="b-genetics-links__item"><a class="b-genetics-links__link" href="#direction-review">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="b-directions-card b-anim js-on-visible animated" id="directions">
+          <div class="b-container">
+              <h2 class="b-title b-title--h2 b-title--directions-card">Направления в&nbsp;генетике
+              </h2>
+            <ul class="b-directions-card__list">
+              <li class="b-directions-card__item"><a class="b-directions-card__link" href="javascript:void(0);">Кариотипирование</a>
+              </li>
+              <li class="b-directions-card__item"><a class="b-directions-card__link" href="javascript:void(0);">Пренатальная диагностика</a>
+              </li>
+              <li class="b-directions-card__item"><a class="b-directions-card__link" href="javascript:void(0);">Молекулярно-генетические исследования</a>
+              </li>
+              <li class="b-directions-card__item"><a class="b-directions-card__link" href="javascript:void(0);">Медико-генетическое консультирование</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="b-direction-block b-anim js-on-visible animated" id="direction">
+          <div class="b-container">
+              <h2 class="b-title b-title--h2 b-title--direction-block">О&nbsp;направлении
+              </h2>
+            <div class="b-direction-block__content">
+              <div class="b-direction-block__text-wrap">
+                <p class="b-direction-block__text">Репродуктивная медицина очень тесно связана с&nbsp;медицинской генетикой. Именно генетические исследования во&nbsp;многих случаях позволяют выяснить причину нарушений репродуктивной функции, проанализировать и&nbsp;свести к&nbsp;минимуму риски врождённых заболеваний для будущего ребёнка, а&nbsp;также проконтролировать его состояние в&nbsp;ходе беременности.
+                </p>
+                <p class="b-direction-block__text">Именно генетические исследования во&nbsp;многих случаях позволяют выяснить причину нарушений репродуктивной функции, проанализировать и&nbsp;свести к&nbsp;минимуму риски врождённых заболеваний для будущего ребёнка, а&nbsp;также проконтролировать его состояние в&nbsp;ходе беременности.
+                </p>
+              </div>
+              <div class="b-direction-block__image-wrap"><img class="b-direction-block__img" src="/images/content/genetics/genetics1.png" alt="" role="presentation"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-service-cost b-anim js-on-visible animated" id="service-cost">
+          <div class="b-container">
+              <h2 class="b-title b-title--h2 b-title--service-cost">Стоимость услуг
+              </h2>
+              <div class="b-search b-search--search b-search--results b-search--service-cost js-search-wrapper b-anim js-on-visible animated">
+                <form class="b-search__form js-form-validate js-form-validate--search js-form-validate--results js-form-validate--service-cost js-search-wrapper b-anim js-on-visible animated" method="post" name="service-results" action="">
+                  <div class="b-input b-input--search b-input--results b-input--service-cost js-search-wrapper b-anim js-on-visible animated"><input class="b-input__input-field b-input__input-field--search js-search js-input js-input--search js-input--results js-input--service-cost js-search-wrapper b-anim js-on-visible animated" id="search" type="text" placeholder="Поиск услуги" name="search" required="required"/><span class="b-input__error">Текст ошибки</span>
+                  </div>
+                  <button class="b-button b-button--service-cost js-do-search"><i class="b-icon b-icon--search b-icon--service-cost b-icon--open-search icon-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="b-service-list">
+                <ul class="b-service-list__wrapper">
+                  <li class="b-service-list__item">
+                    <div class="b-service-list__description">
+                      <div class="b-service-list__title">Тестирование 1&nbsp;эмбриона методом aCGH
+                      </div>
+                      <div class="b-service-list__cost">2&nbsp;000&nbsp;₽
+                      </div>
+                    </div><a class="b-button b-button--orange b-button--service-list" href="javascript:void(0);" title="Записаться">Записаться</a>
+                  </li>
+                  <li class="b-service-list__item">
+                    <div class="b-service-list__description">
+                      <div class="b-service-list__title">Тестирование 1&nbsp;эмбриона методом aCGH
+                      </div>
+                      <div class="b-service-list__cost">2&nbsp;000&nbsp;₽
+                        <ul class="b-service-list__content">
+                          <li class="b-service-list__elem">
+                            <div class="b-service-list__price">2&nbsp;010&nbsp;₽
+                            </div>
+                            <div class="b-service-list__adress">Парадный квартал
+                            </div>
+                          </li>
+                          <li class="b-service-list__elem">
+                            <div class="b-service-list__price">2&nbsp;010&nbsp;₽
+                            </div>
+                            <div class="b-service-list__adress">Клиника на&nbsp;Невском
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div><a class="b-button b-button--orange b-button--service-list" href="javascript:void(0);" title="Записаться">Записаться</a>
+                  </li>
+                  <li class="b-service-list__item">
+                    <div class="b-service-list__description">
+                      <div class="b-service-list__title">Тестирование 1&nbsp;эмбриона методом aCGH
+                      </div>
+                      <div class="b-service-list__cost">2&nbsp;000&nbsp;₽
+                      </div>
+                    </div><a class="b-button b-button--orange b-button--service-list" href="javascript:void(0);" title="Записаться">Записаться</a>
+                  </li>
+                </ul><a class="b-button b-button--green b-button--service-all" href="javascript:void(0);" title="Показать все (28)">Показать все (28)</a>
+              </div>
+          </div>
+        </div>
+        <div class="b-doctors b-anim js-on-visible animated" id="doctors">
+          <div class="b-container">
+              <h2 class="b-title b-title--h2 b-title--doctor">Врачи
+              </h2>
+              <div class="b-doctors-slider">
+                <div class="b-doctors-slider__wrapper js-doctors-slider">
+                  <div class="b-doctors-slider__column-wrap">
+                    <div class="b-doctors-slider__row-wrap"><a class="b-doctors-slider__item" href="javascript:void(0);">
+                      <div class="b-doctors-slider__image-wrap"><img class="b-doctors-slider__image" src="/images/content/doctors/doctor1.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="b-doctors-slider__description">
+                        <div class="b-doctors-slider__title">Калугина Алла Станиславовна
+                        </div>
+                        <div class="b-doctors-slider__content">
+                          <div class="b-doctors-slider__position">Акушер-гинеколог, Акушер-гинеколог родильного отделения
+                          </div>
+                        </div>
+                        <div class="b-doctors-slider__experience">стаж 13 лет
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                  <div class="b-doctors-slider__column-wrap">
+                    <div class="b-doctors-slider__row-wrap"><a class="b-doctors-slider__item" href="javascript:void(0);">
+                      <div class="b-doctors-slider__image-wrap"><img class="b-doctors-slider__image" src="/images/content/doctors/doctor2.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="b-doctors-slider__description">
+                        <div class="b-doctors-slider__title">Каменецкий Борис Александрович
+                        </div>
+                        <div class="b-doctors-slider__content">
+                          <div class="b-doctors-slider__position">Акушер-гинеколог репродуктолог
+                          </div>
+                          <div class="b-doctors-slider__graduate">к.м.н
+                          </div>
+                        </div>
+                        <div class="b-doctors-slider__experience">стаж 13 лет
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                  <div class="b-doctors-slider__column-wrap">
+                    <div class="b-doctors-slider__row-wrap"><a class="b-doctors-slider__item" href="javascript:void(0);">
+                      <div class="b-doctors-slider__image-wrap"><img class="b-doctors-slider__image" src="/images/content/doctors/doctor3.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="b-doctors-slider__description">
+                        <div class="b-doctors-slider__title">Арковкина Юлия Степановна
+                        </div>
+                        <div class="b-doctors-slider__content">
+                          <div class="b-doctors-slider__position">Дерматолог, Проводит телемедицинские консультации
+                          </div>
+                        </div>
+                        <div class="b-doctors-slider__experience">стаж 13 лет
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                  <div class="b-doctors-slider__column-wrap">
+                    <div class="b-doctors-slider__row-wrap"><a class="b-doctors-slider__item" href="javascript:void(0);">
+                      <div class="b-doctors-slider__image-wrap"><img class="b-doctors-slider__image" src="/images/content/doctors/doctor4.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="b-doctors-slider__description">
+                        <div class="b-doctors-slider__title">Андреева Анастасия Юрьевна
+                        </div>
+                        <div class="b-doctors-slider__content">
+                          <div class="b-doctors-slider__position">Дерматолог, Проводит телемедицинские консультации
+                          </div>
+                          <div class="b-doctors-slider__graduate">д.м.н
+                          </div>
+                        </div>
+                        <div class="b-doctors-slider__experience">стаж 15 лет
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                  <div class="b-doctors-slider__column-wrap">
+                    <div class="b-doctors-slider__row-wrap"><a class="b-doctors-slider__item" href="javascript:void(0);">
+                      <div class="b-doctors-slider__image-wrap"><img class="b-doctors-slider__image" src="/images/content/doctors/doctor1.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="b-doctors-slider__description">
+                        <div class="b-doctors-slider__title">Калугина Алла Станиславовна
+                        </div>
+                        <div class="b-doctors-slider__content">
+                          <div class="b-doctors-slider__position">Акушер-гинеколог репродуктолог
+                          </div>
+                        </div>
+                        <div class="b-doctors-slider__experience">стаж 13 лет
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="b-direction-review b-anim js-on-visible animated" id="direction-review">
+          <div class="b-container">
+              <h2 class="b-title b-title--h2 b-title--direction-review">Отзывы пациентов
+              </h2>
+              <div class="b-direction-review-slider">
+                <div class="b-direction-review-slider__wrapper js-direction-review-slider">
+                  <div class="b-direction-review-slider__inner">
+                    <div class="b-direction-review-slider__title">Екатерина
+                    </div>
+                    <div class="b-direction-review-slider__text">Сбор жалоб, анамнеза жизни и&nbsp;заболевания, общий (терапевтический) осмотр пациента, постановка диагноза, назначение дополнительных методов исследования при необходимости, операционного вмешательства, в&nbsp;т.ч. необходимости, вмешательства, в&nbsp;т.&nbsp;ч.
+                    </div><a class="b-direction-review-slider__more" href="javascript:void(0);">Далее<i class="b-icon b-icon--direction icon-arrow-down"></i></a>
+                  </div>
+                  <div class="b-direction-review-slider__inner">
+                    <div class="b-direction-review-slider__title">Екатерина
+                    </div>
+                    <div class="b-direction-review-slider__text">Сбор жалоб, анамнеза жизни и&nbsp;заболевания, общий (терапевтический) осмотр пациента, постановка диагноза, назначение дополнительных методов исследования при необходимости, операционного вмешательства, в&nbsp;т.ч. необходимости, вмешательства, в&nbsp;т.&nbsp;ч.
+                    </div><a class="b-direction-review-slider__more" href="javascript:void(0);">Далее<i class="b-icon b-icon--direction icon-arrow-down"></i></a>
+                  </div>
+                  <div class="b-direction-review-slider__inner">
+                    <div class="b-direction-review-slider__title">Екатерина
+                    </div>
+                    <div class="b-direction-review-slider__text">Сбор жалоб, анамнеза жизни и&nbsp;заболевания, общий (терапевтический) осмотр пациента, постановка диагноза, назначение дополнительных методов исследования при необходимости, операционного вмешательства, в&nbsp;т.ч. необходимости, вмешательства, в&nbsp;т.&nbsp;ч.
+                    </div><a class="b-direction-review-slider__more" href="javascript:void(0);">Далее<i class="b-icon b-icon--direction icon-arrow-down"></i></a>
+                  </div>
+                  <div class="b-direction-review-slider__inner">
+                    <div class="b-direction-review-slider__title">Екатерина
+                    </div>
+                    <div class="b-direction-review-slider__text">Сбор жалоб, анамнеза жизни и&nbsp;заболевания, общий (терапевтический) осмотр пациента, постановка диагноза, назначение дополнительных методов исследования при необходимости, операционного вмешательства, в&nbsp;т.ч. необходимости, вмешательства, в&nbsp;т.&nbsp;ч.
+                    </div><a class="b-direction-review-slider__more" href="javascript:void(0);">Далее<i class="b-icon b-icon--direction icon-arrow-down"></i></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </main>
+      <footer class="b-footer b-anim js-on-visible animated">
+        <div class="b-footer__mobile">
+          <div class="b-footer__top"> 
+            <div class="b-container">
+              <div class="b-footer__inner"><a class="b-logo b-logo--footer b-logo--mobile" href="/" title="">
+                <picture class="b-logo__picture"><source class="b-logo__image" srcset="images/inhtml/logo.svg" media="(min-width: 1024px)"/><img class="b-logo__image" src="images/inhtml/logo-tablet.svg" alt="" role="presentation"/>
+                </picture></a>
+                <div class="b-social b-social--footer-mobile">
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.instagram.com/avakazan_scandinavia/" title="" target="_blank"><i class="b-icon icon-in2"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.facebook.com/avakazanscandinavia" title="" target="_blank"><i class="b-icon icon-fb"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://vk.com/avakazan" title="" target="_blank"><i class="b-icon icon-vk"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-ok2"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.youtube.com/c/AvakazanRukzn" title="" target="_blank"><i class="b-icon icon-yt"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="javascript:void(0);" title="" target="_blank"><i class="b-icon icon-zen"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer__middle"> 
+            <div class="b-container">
+              <div class="b-footer__info">
+                <div class="b-footer__info-item">
+                  <div class="b-footer__info-data">ПН-СБ: <span>с 8:00 до 21:00</span>
+                  </div>
+                  <div class="b-footer__info-data">ВС:  <span>с 8:00 до 17:00</span>
+                  </div>
+                </div>
+                <div class="b-footer__info-item"><span class="b-footer__info-title">Ресепшн:</span><a class="b-link b-link--phone b-link--footer-mobile" href="tel:78432071538" title="+7 (843) 207-15-38">+7 (843) 207-15-38</a>
+                </div>
+                <div class="b-footer__info-item"><span class="b-footer__info-title">E-mail:</span><a class="b-link b-link--phone b-link--footer-mobile" href="mailto:info@avakazan.ru" title="info@avakazan.ru">info@avakazan.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer__bottom-first">
+            <div class="b-container">
+                <ul class="b-menu-footer b-menu-footer--mobile b-menu-footer--first">
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Взрослым">Взрослым</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Детям">Детям</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Беременность">Беременность</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Диагностика">Диагностика</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Хирургия">Хирургия</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Эстетическая медицина">Эстетическая медицина</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Вакцинация">Вакцинация</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="ЭКО">ЭКО</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="b-footer__bottom-second">
+            <div class="b-container">
+                <ul class="b-menu-footer b-menu-footer--mobile">
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="clinic.html" title="Клиника">Клиника</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Цены">Цены</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="reviews-page.html" title="Отзывы">Отзывы</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Акции">Акции</a>
+                      </li>
+                      <li class="b-menu-footer__item b-menu-footer__item--mobile b-menu-footer__item--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="for-clients.html" title="Корпоративным клиентам">Корпоративным клиентам</a>
+                      </li>
+                      <li class="b-menu-footer__item b-menu-footer__item--tablet b-menu-footer__item--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="for-clients.html" title="Клиентам">Клиентам</a>
+                      </li>
+                      <li class="b-menu-footer__item b-menu-footer__item--mobile b-menu-footer__item--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="useful-information.html" title="Полезная информация">Полезная информация</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="news.html" title="Новости">Новости</a>
+                      </li>
+                      <li class="b-menu-footer__item b-menu-footer__item--tablet b-menu-footer__item--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Информация">Информация</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="contacts.html" title="Контакты">Контакты</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__desktop">
+          <div class="b-footer__top">
+            <div class="b-container">
+              <div class="b-footer__inner"><a class="b-logo b-logo--footer" href="/" title="">
+                <picture class="b-logo__picture"><source class="b-logo__image" srcset="images/inhtml/logo.svg" media="(min-width: 1024px)"/><img class="b-logo__image" src="images/inhtml/logo-tablet.svg" alt="" role="presentation"/>
+                </picture></a>
+                <div class="b-footer__phone"><span class="b-footer__fulltime">Контактный центр</span><a class="b-link b-link--phone b-link--footer" href="tel:78432001065" title="+ 7 (843) 200-10-65">+ 7 (843) 200-10-65</a>
+                </div>
+                <div class="b-footer__phone"><span class="b-footer__fulltime">Скорая помощь</span><a class="b-link b-link--phone b-link--footer" href="tel:78432001065" title="+ 7 (843) 200-10-65">+ 7 (843) 200-10-65</a>
+                </div>
+                <div class="b-footer__phone"><span class="b-footer__fulltime">E-mail</span><a class="b-link b-link--phone b-link--footer" href="mailto:info@avakazan.ru" title="info@avakazan.ru">info@avakazan.ru</a>
+                </div>
+                <div class="b-social b-social--footer">
+                  <div class="b-social__item"><a class="b-social__link" href="https://vk.com/avakazan" title="" target="_blank"><i class="b-icon icon-vk"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.youtube.com/c/AvakazanRukzn" title="" target="_blank"><i class="b-icon icon-yt"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.facebook.com/avakazanscandinavia" title="" target="_blank"><i class="b-icon icon-fb"></i></a>
+                  </div>
+                  <div class="b-social__item"><a class="b-social__link" href="https://www.instagram.com/avakazan_scandinavia/" title="" target="_blank"><i class="b-icon icon-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer__bottom">
+            <div class="b-container">
+              <div class="b-footer__inner">
+                <ul class="b-menu-footer">
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Поликлиника">Поликлиника</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Педиатрия">Педиатрия</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Диагностика">Диагностика</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Ведение беременности">Ведение беременности</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Роддом">Роддом</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Стационар">Стационар</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Пластиковая хирургия">Пластиковая хирургия</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Эко">Эко</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Косметология">Косметология</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Услуги и цены">Услуги и цены</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="/doctors.html" title="Врачи взрослым">Врачи взрослым</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="/doctors.html" title="Врачи детям">Врачи детям</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="/useful-diagnostics.html" title="Диагностика">Диагностика</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Лабораторные исследования">Лабораторные исследования</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Вызов врача на дом">Вызов врача на дом</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Скорая помощь">Скорая помощь</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="/clinic.html" title="О компании ">О компании </a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="История">История</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Миссия">Миссия</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="/management.html" title="Руководство">Руководство</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Система качества">Система качества</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Партнеры">Партнеры</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Вакансии">Вакансии</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="/contacts.html" title="Контакты">Контакты</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Справочная">Справочная</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Проживание">Проживание</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Оформление справок">Оформление справок</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Вопросы и ответы">Вопросы и ответы</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Нормативные документы">Нормативные документы</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Для страховых">Для страховых</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Специализированные центры">Специализированные центры</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Статистика">Статистика</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="b-menu-footer__col">
+                    <ul class="b-menu-footer__list-inner">
+                      <li class="b-menu-footer__item b-undefined b-undefined--strong"><a class="b-menu-footer__link b-menu-footer__link--strong" href="javascript:void(0);" title="Наши проекты">Наши проекты</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Клиника Avapeter">Клиника Avapeter</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Клиника Ава-Казань">Клиника Ава-Казань</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="МРТ-центр">МРТ-центр</a>
+                      </li>
+                      <li class="b-menu-footer__item b-undefined b-undefined--light"><a class="b-menu-footer__link b-menu-footer__link--light" href="javascript:void(0);" title="Блог #качествожизни">Блог #качествожизни</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+        <div class="b-popup b-popup--gallery" data-popup="gallery">
+          <div class="b-popup__content"><a class="b-popup__close b-popup__close--gallery js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a><img class="b-popup-gallery js-gallery-view js-image-wrapper" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" role="presentation"/>
+          </div>
+        </div>
+        <div class="b-popup" data-popup="appointment">
+          <div class="b-popup__content"><a class="b-popup__close js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a>
+                <div class="b-popup-appointment">
+                      <h3 class="b-title b-title--h3 b-title--popup">Запись на&nbsp;прием
+                      </h3>
+                  <form class="b-popup-appointment__form js-form-validate" method="post" name="form-appointment" action="">
+                        <div class="b-input b-input--appointment js-regex"><input class="b-input__input-field js-input js-input--appointment js-regex" id="appointment-name" type="text" placeholder="Ваше имя*" name="appointment-name" required="required"/><span class="b-input__error">Текст ошибки</span>
+                          <label class="b-input__label" for="appointment-name">Ваше имя<span class="b-input__required">*</span>
+                          </label><a class="b-input__clean js-clean-input" href="javascript:void(0);"><i class="b-icon b-icon--input icon-close"></i></a>
+                        </div>
+                        <div class="b-input b-input--appointment js-mask-tel"><input class="b-input__input-field js-input js-input--appointment js-mask-tel" id="tel-input" type="text" placeholder="Телефон*" name="appointment-tel" required="required"/><span class="b-input__error">Текст ошибки</span>
+                          <label class="b-input__label" for="tel-input">Телефон<span class="b-input__required">*</span>
+                          </label><a class="b-input__clean js-clean-input" href="javascript:void(0);"><i class="b-icon b-icon--input icon-close"></i></a>
+                        </div>
+                        <div class="b-input b-input--appointment js-valid-date"><input class="b-input__input-field js-input js-input--appointment js-valid-date" id="datepicker" type="text" placeholder="Дата*" name="appointment-date" required="required" autocomplete="off"/><span class="b-input__error">Текст ошибки</span>
+                          <label class="b-input__label" for="datepicker">Дата<span class="b-input__required">*</span>
+                          </label><a class="b-input__clean js-clean-input" href="javascript:void(0);"><i class="b-icon b-icon--input icon-close"></i></a>
+                        </div>
+                        <button class="b-button b-button--green b-button--appointment">Оставить заявку
+                        </button>
+                  </form>
+                  <div class="b-popup-appointment__note">Нажимая на&nbsp;кнопку, вы&nbsp;принимаете условия&nbsp;<a class="b-popup-appointment__link" href="javascript:void(0);">политики конфиденциальности</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="b-popup" data-popup="callback">
+          <div class="b-popup__content"><a class="b-popup__close js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a>
+                <div class="b-popup-callback">
+                      <h3 class="b-title b-title--h3 b-title--popup">Обратный звонок
+                      </h3>
+                  <div class="b-popup-callback__text">Оператор колл-центра перезвонит Вам для уточнения деталей и&nbsp;подтверждения записи на&nbsp;прием. Пожалуйста, будьте готовы ответить на&nbsp;звонок
+                  </div>
+                  <form class="b-popup-callback__form js-form-validate" method="post" name="form-callback" action="">
+                        <div class="b-input b-input--callback js-regex"><input class="b-input__input-field js-input js-input--callback js-regex" id="callback-name" type="text" placeholder="Имя*" name="callback-name" required="required"/><span class="b-input__error">Текст ошибки</span>
+                          <label class="b-input__label" for="callback-name">Имя<span class="b-input__required">*</span>
+                          </label><a class="b-input__clean js-clean-input" href="javascript:void(0);"><i class="b-icon b-icon--input icon-close"></i></a>
+                        </div>
+                        <div class="b-input b-input--callback js-tel-input"><input class="b-input__input-field js-input js-input--callback js-tel-input" id="tel-input" type="tel" placeholder="Телефон*" name="callback-tel" required="required"/><span class="b-input__error">Текст ошибки</span>
+                          <label class="b-input__label" for="tel-input">Телефон<span class="b-input__required">*</span>
+                          </label><a class="b-input__clean js-clean-input" href="javascript:void(0);"><i class="b-icon b-icon--input icon-close"></i></a>
+                        </div>
+                    <div class="b-popup-callback__subtitle">Время суток
+                    </div>
+                    <div class="b-popup-callback__wrapper">
+                          <div class="b-checkbox b-checkbox--inner"><input class="b-checkbox__input" type="checkbox" name="days-time" id="all-time" title="Любое" value="all-time" checked="checked"/>
+                            <label class="b-checkbox__name b-checkbox__name--inner" for="all-time"><span class="b-checkbox__text">Любое</span>
+                            </label>
+                          </div>
+                          <div class="b-checkbox b-checkbox--inner"><input class="b-checkbox__input" type="checkbox" name="days-time" id="morning" title="Утро" value="morning"/>
+                            <label class="b-checkbox__name b-checkbox__name--inner" for="morning"><span class="b-checkbox__text">Утро</span>
+                            </label>
+                          </div>
+                          <div class="b-checkbox b-checkbox--inner"><input class="b-checkbox__input" type="checkbox" name="days-time" id="afternoon" title="День" value="afternoon"/>
+                            <label class="b-checkbox__name b-checkbox__name--inner" for="afternoon"><span class="b-checkbox__text">День</span>
+                            </label>
+                          </div>
+                          <div class="b-checkbox b-checkbox--inner"><input class="b-checkbox__input" type="checkbox" name="days-time" id="evening" title="Вечер" value="evening"/>
+                            <label class="b-checkbox__name b-checkbox__name--inner" for="evening"><span class="b-checkbox__text">Вечер</span>
+                            </label>
+                          </div>
+                    </div>
+                        <div class="b-checkbox b-checkbox--callback b-checkbox--policy"><input class="b-checkbox__input" type="checkbox" name="privacy-policy" id="privacy-policy" value="" checked="checked" required="required"/>
+                          <label class="b-checkbox__name b-checkbox__name--callback b-checkbox__name--policy" for="privacy-policy"><span class="b-checkbox__text b-checkbox__text--mobile">Подтверждаю свое согласие с&nbsp;<a class='b-checkbox__link' href='javascript:void(0);'>политикой конфиденциальности</a></span><span class="b-checkbox__text b-checkbox__text--tablet">В&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006&nbsp;г. &#8470;&nbsp;152-ФЗ <a class="b-checkbox__link b-checkbox__link--inline" href="javascript:void(0);">&laquo;О&nbsp;персональных данных&raquo;</a>, подтверждаю свое согласие на&nbsp;обработку персональных данных<a class="b-checkbox__link" href="javascript:void(0);">Политика конфиденциальности</a></span>
+                          </label>
+                        </div>
+                        <button class="b-button b-button--orange b-button--callback">заказать звонок
+                        </button>
+                  </form>
+                </div>
+          </div>
+        </div>
+        <div class="b-popup b-popup--tour" data-popup="virtual-tour">
+          <div class="b-popup__content"><a class="b-popup__close js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a>
+                <div class="b-popup-tour">
+                  <div class="b-popup-tour__wrapper">
+                    <iframe class="b-popup-tour__iframe" width="853" height="480" src="https://my.matterport.com/show/?m=wazeTFtnynd" frameborder="0" allowfullscreen="" allow="xr-spatial-tracking">
+                    </iframe>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="b-popup b-popup--review" data-popup="review">
+          <div class="b-popup__content"><a class="b-popup__close js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a>
+                <div class="b-popup-review">
+                      <h3 class="b-title b-title--h3 b-title--popup b-title--popup-review">Фильтр отзывов
+                      </h3>
+                  <form class="b-popup-review__form js-form-validate" method="post" name="form-review" action="">
+                    <div class="b-select b-select--with-label b-select--review js-quote-select">
+                      <select class="js-simple-select" data-placeholder="Врач" data-search-placeholder="undefined" name="doc">
+                        <option>
+                        </option>
+                        <option value="1">Врач 1
+                        </option>
+                        <option value="2">Врач 2
+                        </option>
+                        <option value="3">Врач 3
+                        </option>
+                        <option value="4">Врач 4
+                        </option>
+                      </select>
+                      <label class="b-select__label js-select-label">Врач
+                      </label>
+                    </div>
+                    <div class="b-select b-select--multi b-select--review js-quote-select">
+                      <select class="js-multi-select" name="spec" data-theme="">
+                        <option value="0">Все направления
+                        </option>
+                        <option value="2">Прием-осмотр
+                        </option>
+                        <option value="3">Сеанс мануальной терапии
+                        </option>
+                        <option value="4">Прием (консультация)
+                        </option>
+                      </select>
+                      <label class="b-select__label js-select-label">Направления
+                      </label>
+                      <div class="b-select__placeholder">Направления
+                      </div>
+                    </div>
+                        <button class="b-button b-button--green b-button--popup-review js-close-popup">Показать отзывы
+                        </button>
+                  </form>
+                </div>
+          </div>
+        </div>
+        <div class="b-popup b-popup--thank" data-popup="thank">
+          <div class="b-popup__content"><a class="b-popup__close js-close-popup" href="javascript:void(0);"><i class="b-icon b-icon--close-popup icon-close"></i></a>
+                <div class="b-popup-thank">
+                      <h3 class="b-title b-title--h3 b-title--popup b-title--thank">Спасибо за&nbsp;обращение!
+                      </h3>
+                  <p class="b-popup-thank__text"> Спасибо за&nbsp;Ваше обращение, оно очень важно для нас. Мы рассмотрим его и&nbsp;дадим Вам обратную связь в&nbsp;ближайшее время
+                  </p>
+                      <button class="b-button b-button--orange b-button--thank js-close-popup">Закрыть
+                      </button>
+                </div>
+          </div>
+        </div>
+    <script src="js/external.js"></script>
+    <script src="js/internal.js"></script>
+  </body>
+</html>
